@@ -2,14 +2,18 @@ package Lab;
 public class average {
     public static double averageOfN(int n) {
 
-        int sum = 0;
+        double sum = 0;
 
-        for(int i = 0; i< n; i++){
-            
-            sum = sum + i;
-        }
 
-        double average = sum/n;
+        double [] balances = new double[]{45.23, 46.85, 50.47};
+
+        for(double balance: balances)
+        sum += balance;
+
+
+
+
+        double average = sum/3;
 
         return average;
 
